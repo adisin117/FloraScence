@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join Us</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<form>
+    <div class=hero-login>
+        <form action="#" method="POST" style="max-width: 400px; display: flex; flex-direction: column; gap: 10px;">
+            <label>Name:</label>
+            <input type="text" required minlength="3">
+
+            <label>Email:</label>
+            <input type="email" required>
+
+            <label>Password:</label>
+            <input type="password" required
+                   pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,}$"
+                   title="Min 8 chars, 1 uppercase, 1 number">
+
+            <label>Confirm Password:</label>
+            <input type="password" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</form>
+</body>
+</html>
