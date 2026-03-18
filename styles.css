@@ -15,6 +15,38 @@ body{
     gap: 20px;
     justify-content: right;
     align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-parent{
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #F1F8F4;
+    min-width: 150px;
+    list-style: none;
+    border-radius: 5px;
+}
+
+.dropdown-parent:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f1f1f1;
 }
 
 .hero{
@@ -90,7 +122,7 @@ body{
 
 .feature-card{
     width: 200px;
-    height: 300px;
+    height: 150px;
     overflow: hidden;
     background: linear-gradient(135deg, #dce775, #aed581);;
     display: flex;
@@ -108,4 +140,21 @@ body{
     object-fit: cover;
     border-radius: 15px;
     border: 5px solid steelblue;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+.footer-links{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
 }
