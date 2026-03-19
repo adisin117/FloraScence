@@ -1,0 +1,38 @@
+body{
+    font-family: "Times New Roman", sans-serif;
+}
+
+#plant-header{
+    margin: 30px;
+}
+
+.plant-container{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.plant-image img{
+    width: auto;
+    height: 450px;
+    justify-content: left;
+    align-items: start;
+    margin-left: 50px;
+}
+
+.plant-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 600px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.overview p{
+    font-size: 20px;
+    font-weight: normal;
+    max-width: 60%;
+    margin: 30px 50px;
+}
+
