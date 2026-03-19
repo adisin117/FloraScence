@@ -6,27 +6,38 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-<form class="login-form">
-    <div class=hero-login>
-        <h1>Join Us</h1>
-        <form action="#" method="POST">
-            <label>Name:</label>
-            <input type="text" required minlength="3">
 
-            <label>Email:</label>
-            <input type="email" required>
+<div class="hero-login">
+    <h2>Join Us</h2>
+    <h4>Be a part of this incredible community</h4>
 
-            <label>Password:</label>
-            <input type="password" required
+    <form class="login-form" action="#" method="POST">
+
+        <div class="input-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" required minlength="3" placeholder="Name">
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required minlength="3" placeholder="Email">
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required
                    pattern="^(?=.*[0-9])(?=.*[A-Z]).{8,}$"
-                   title="Min 8 chars, 1 uppercase, 1 number">
+                   title="Min 8 chars, 1 uppercase, 1 number" placeholder="Password">
+        </div>
 
-            <label>Confirm Password:</label>
-            <input type="password" required>
+        <div class="input-group">
+            <label for="confirm">Confirm Password</label>
+            <input type="password" id="confirm" required placeholder="Confirm Password">
+        </div>
 
-            <button type="submit">Register</button>
-        </form>
-    </div>
-</form>
+        <button type="submit" id="register">Register</button>
+
+    </form>
+</div>
 </body>
 </html>

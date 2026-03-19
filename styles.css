@@ -157,11 +157,10 @@ body{
 }
 
 .features-items img {
-    width: 100%;
-    height: 100%;
+    height: 90%;
+    width: 90%;
     object-fit: cover;
-    border-radius: 15px;
-    border: 5px solid steelblue;
+
 }
 
 footer {
@@ -179,6 +178,8 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .jumbotron{
@@ -192,9 +193,28 @@ footer {
     animation: ease-in;
 }
 
+.community-blog{
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 50px;
+    background-image: linear-gradient(-45deg, khaki, darkkhaki , sandybrown  );
+    display: flex;
+}
+
+.community-blog-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left : 270px ;
+}
+
 
 @media (max-width: 414px) {
-    .features-items {
+    .feature-card {
         flex-direction: column;
         align-items: center;
     }

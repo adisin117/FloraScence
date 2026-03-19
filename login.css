@@ -1,33 +1,87 @@
 body{
-    font-family: sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;;
     font-size: 16px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    background-image: url("./assets/michael-fortsch-VxOgMpK53yo-unsplash.jpg");
+}
+
+.hero-login{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    max-width: 500px;
+    background: linear-gradient(indianred, #A2CB8B, mediumaquamarine, steelblue);
+    border-radius: 16px;
+    box-sizing: border-box;
+    backdrop-filter: blur(20px);
+}
+
+.hero-login h2{
+
+    text-align: center;
+    margin: 50px 0 5px 0;
+    font-size: 30px;
+}
+
+.hero-login h4 {
+    margin: 0 0 25px 0;
+    color: #555;
+    font-size: 18px;
+}
+
+.input-group{
+    text-align: left;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.input-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input-group input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.input-group input:focus{
+    outline: none;
+    border-color: gold;
 }
 
 .login-form{
-    margin: 0;
-    background-color: white;
-    width: 400px;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-.hero-login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.login-form button{
+    background-color: khaki;
+    height: 55px;
+    width: 80%;
+    display: grid;
+    grid-column: 1 ;
     justify-content: center;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    background: linear-gradient(#84B179, #A2CB8B, #C7EABB, #E8F5BD);
-    margin: 0;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 26px;
+    padding: 10px;
+    box-shadow: 10px 10px 20px #84B179;
 }
