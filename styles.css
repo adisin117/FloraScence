@@ -147,6 +147,7 @@ body{
 
 .hero-button a{
     text-decoration: none;
+    color: inherit;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -217,11 +218,17 @@ footer {
 }
 
 .footer-links{
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 20px;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.footer-links a{
     text-decoration: none;
     color: inherit;
 }
@@ -254,7 +261,7 @@ footer {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 70px;
-    margin-left : 270px ;
+    margin-left : 170px ;
 
 }
 
@@ -264,7 +271,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 70px 200px;
+    margin: 70px 170px;
 }
 
 @media (max-width: 768px) {
