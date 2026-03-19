@@ -1,7 +1,6 @@
 body{
     background-color: #F1F8F4;
     font-family: sans-serif;
-
 }
 
 .navbar{
@@ -55,11 +54,11 @@ body{
     height: 60vh;
     background-image: linear-gradient(-45deg, #2e7d32, #81c784  , #1b5e20 );
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    background-size: 400% 400%;
+    gap: 80px;
+    padding: 0 5%;
     animation: gradient-animation 12s ease infinite alternate;
 }
 
@@ -76,6 +75,10 @@ body{
     width: 100%;
     font-size: 3rem;
     font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 }
 
 .hero-text h2 {
@@ -84,11 +87,19 @@ body{
     opacity: 0.9;
 }
 
+.hero-image img {
+    height: 350px;
+    width: auto;
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+}
+
 .features{
     margin: 5vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .features-items{
@@ -101,12 +112,49 @@ body{
     text-align: center;
 }
 
-.hero-button{
+#login-button{
+    text-decoration: none;
     width: 150px;
     height: 50px;
     background-color: wheat;
     border-radius: 15px;
     padding: 3px;
+    border: 1px solid black;
+    color: darkolivegreen;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#login-button:hover{
+    background-color: darkkhaki;
+    box-shadow-color: indianred;
+    box-shadow: 3px 3px 8px indianred;
+}
+
+.hero-button{
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    background-color: wheat;
+    border-radius: 15px;
+    padding: 3px;
+    border: 1px solid black;
+    color: darkolivegreen;
+    font-weight: bold;
+    text-align: center;
+}
+
+.hero-button a{
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.hero-button:hover{
+    background-color: darkkhaki;
+    box-shadow-color: indianred;
+    box-shadow: 3px 3px 8px indianred;
 }
 
 .hero-button:hover{
@@ -123,11 +171,6 @@ body{
 .hero-button:visited{
     text-decoration: none;
     color: black;
-}
-
-#login-button-hero{
-    text-decoration: none;
-    color: darkolivegreen;
 }
 
 .feature-card{
@@ -159,7 +202,7 @@ body{
 .features-items img {
     height: 90%;
     width: 90%;
-    object-fit: cover;
+    object-fit: contain;
 
 }
 
@@ -169,6 +212,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
     background-color: lightgreen;
 }
 
@@ -197,8 +241,9 @@ footer {
     height: 50vh;
     width: 100%;
     margin-bottom: 50px;
-    background-image: linear-gradient(-45deg, khaki, darkkhaki , sandybrown  );
+    background: linear-gradient(135deg, #d4fc79, #96e6a1);
     display: flex;
+    flex-direction: row;
 }
 
 .community-blog-content{
@@ -210,25 +255,42 @@ footer {
     margin-top: 70px;
     margin-bottom: 70px;
     margin-left : 270px ;
+
 }
 
+.articles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 70px 200px;
+}
 
-@media (max-width: 414px) {
-    .feature-card {
-        flex-direction: column;
+@media (max-width: 768px) {
+
+    .hero-text {
         align-items: center;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
         text-align: center;
     }
 
     .hero{
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        text-align: center;
-        height: 30vh;
+        gap: 30px;
+    }
+
+    .hero-image img{
+        height: 350px;
+    }
+
+    .feature-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .community-blog-content{
+        display: flex;
+        flex-direction: column;
     }
 }
